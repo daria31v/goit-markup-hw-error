@@ -1,0 +1,38 @@
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients{
+    @extend %container;
+}
+.clients__list {
+    @extend %reset-list;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients__link {
+    @extend %reset-link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icon-border-color);
+    border-radius: 4px;
+    color: var(--icon-color);
+    transition: color var(--transition), border var(--transition);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-bgr-btn-color);
+        border: 1px solid var(--accent-bgr-btn-color);
+    }
+}
+
+.clients__icon {
+    fill: currentColor;
+}

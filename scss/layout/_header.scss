@@ -1,0 +1,13 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    border: 0px;
+}
+.header__logo {
+    margin-right: 93px;
+}

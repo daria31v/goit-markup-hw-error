@@ -1,0 +1,28 @@
+.section-features {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
+.features{
+    @extend %container;
+}
+.features-list {
+    @extend %reset-list;
+    display: flex;
+    gap: 30px;
+}
+
+.item-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--bgr-button-secondary);
+    margin-bottom: 30px;
+}
+.features-text {
+    color: var(--main-text);
+    line-height: 1.71;
+}

@@ -1,0 +1,35 @@
+.footer__address {
+    display: block;
+    margin-right: 70px;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    display: block;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.address {
+    font-style: normal;
+    color: var(--footer-title);
+}
+.address__address-list {
+    @extend %reset-list;
+    margin-top: 9px;
+}
+.footer__item:not(:last-child) {
+    display: block;
+    margin-bottom: 9px;
+}
+.address__link {
+    @extend %reset-link;
+    color: var(--footer-text-color);
+    letter-spacing: 0.02em;
+    transition: color var(--transition);
+    &:hover,
+    &:focus {
+        color: var(--white-color);}
+}
+
+    
